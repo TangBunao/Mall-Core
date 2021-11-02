@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace mall_aspnetcore
+namespace Mall.Core
 {
     public class Startup
     {
@@ -34,7 +34,7 @@ namespace mall_aspnetcore
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "mall_aspnetcore", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mall.Core", Version = "v1" });
             });
         }
 
@@ -45,7 +45,7 @@ namespace mall_aspnetcore
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "mall_aspnetcore v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mall.Core v1"));
             }
 
             app.UseRouting();

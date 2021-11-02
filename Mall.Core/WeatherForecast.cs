@@ -1,6 +1,6 @@
 using System;
 
-namespace mall_aspnetcore
+namespace Mall.Core
 {
     public class WeatherForecast
     {
