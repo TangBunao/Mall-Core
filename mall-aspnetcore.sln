@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mall-aspnetcore", "mall-aspnetcore\mall-aspnetcore.csproj", "{09F26A8B-FBC9-4216-97B9-4ACF0687BF33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mall.Core", "mall-aspnetcore\Mall.Core.csproj", "{09F26A8B-FBC9-4216-97B9-4ACF0687BF33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mall.Models", "Mall.Models\Mall.Models.csproj", "{6459BE08-C173-4A25-B87E-C528DAD54F99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{09F26A8B-FBC9-4216-97B9-4ACF0687BF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F26A8B-FBC9-4216-97B9-4ACF0687BF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F26A8B-FBC9-4216-97B9-4ACF0687BF33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6459BE08-C173-4A25-B87E-C528DAD54F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6459BE08-C173-4A25-B87E-C528DAD54F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6459BE08-C173-4A25-B87E-C528DAD54F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6459BE08-C173-4A25-B87E-C528DAD54F99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
