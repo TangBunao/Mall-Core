@@ -1,4 +1,6 @@
+using Mall.IRepository;
 using Mall.Models;
+using Mall.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -28,7 +30,9 @@ namespace Mall.Core
         public void ConfigureServices(IServiceCollection services)
         {
             //tang: custom services
-            services.AddDbContext<AppDbContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("sqlConnection")));
+            services.AddDbContext<AppDbContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("sqlConnection"),
+                b => b.MigrationsAssembly("Mall.Core")));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             //tang: default services
             services.AddControllers();
